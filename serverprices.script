@@ -1,0 +1,7 @@
+var ram = args[0];
+
+tprint("RAM: " + (ram).toLocaleString() + "GB  $" + getPurchasedServerCost(ram).toLocaleString());
+
+if (args.length > 1){
+	purchaseServer(args[1], args[0])
+}
